@@ -1,0 +1,15 @@
+mat-toolbar-row {
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+button {
+  font-weight: bold;
+  color: white !important;
+}
+img {
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+}
