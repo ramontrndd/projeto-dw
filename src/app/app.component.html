@@ -1,3 +1,22 @@
 <app-header></app-header>
 <app-navbar></app-navbar>
+@for (card of carrouselCard; track card; let i = $index) {
+  @if (selectedIndex === i) {
+    <app-carrousel
+      [cards]="carrouselCard"
+      [showIndicator]="true"
+      [showNavigators]="true"
+      [autoPlay]="true"
+      [autoPlayInterval]="5000"
+      [(selectedIndex)]="selectedIndex"
+      ><app-carrousel-cards
+        image="{{ card.image }}"
+        title="{{ card.title }}"
+        description="{{ card.description }}"
+        href="{{ card.href }}"
+        carrousel-cards
+      ></app-carrousel-cards
+    ></app-carrousel>
+  }
+}
 <router-outlet />

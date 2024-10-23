@@ -2,9 +2,41 @@ mat-toolbar-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  > nav {
+    > button {
+      border-radius: 4px;
+      margin: 5px;
+      text-transform: uppercase;
+    }
+  }
 }
 button {
-  font-weight: bold;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #f0f0f0c2;
+    transition:
+      width 0.3s ease,
+      left 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+    left: 0;
+    background: #fff;
+  }
 }
 img {
   margin: 5px;
