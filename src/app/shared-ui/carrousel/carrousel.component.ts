@@ -25,7 +25,7 @@ export class CarrouselComponent implements OnInit {
   @Input() cards: Cards[] = [];
   @Input() showIndicator = true;
   @Input() showNavigators = true;
-  @Input() animationSpeed = 1000;
+  @Input() animationSpeed = 500;
   @Input() autoPlay = false;
   @Input() autoPlayInterval = 3000;
   @Input() selectedIndex = 0;
