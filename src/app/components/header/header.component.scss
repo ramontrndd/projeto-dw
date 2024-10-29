@@ -1,11 +1,12 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #fff;
 
   figure > img {
-    width: 75px;
-    height: 75px;
+    width: 130px;
+    height: 100px;
   }
   section {
     display: flex;

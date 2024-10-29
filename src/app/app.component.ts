@@ -4,6 +4,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CarrouselComponent } from './shared-ui/carrousel/carrousel.component';
 import { CarrouselCardsComponent } from "./components/carrousel-cards/carrousel-cards.component";
+import { AboutComponent } from "./components/about/about.component";
 
 
 
@@ -11,7 +12,7 @@ import { CarrouselCardsComponent } from "./components/carrousel-cards/carrousel-
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NavbarComponent, CarrouselComponent, CarrouselCardsComponent,CarrouselCardsComponent],
+  imports: [RouterOutlet, HeaderComponent, NavbarComponent, CarrouselComponent, CarrouselCardsComponent, CarrouselCardsComponent, AboutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
